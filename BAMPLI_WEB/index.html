@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAMPLI - Proyección Linares</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar"> <a href="#" class="nav-logo" onclick="scrollToSection(event, 'inicio')">
+      <img src="img/escudo.jpg" alt="Logo Proyección Linares">
+      <b>BAMPLI</b>
+    </a>
+
+    <button class="menu-toggle" id="mobile-menu">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+    
+    <div class="nav-menu" id="nav-list">
+      <a href="#" onclick="scrollToSection(event, 'inicio')">Inicio</a>
+      <a href="#colores" onclick="scrollToSection(event, 'colores')">Colores</a>
+      <a href="#identidad" onclick="scrollToSection(event, 'identidad')">Identidad</a>
+      <a href="#contactos" onclick="scrollToSection(event, 'contactos')">Contacto</a>
+    </div>
+  </nav>
+
+  <div id="inicio" class="hero-slider-container"> <div class="bg-slide active" style="background-image: url('img/imagen1.jpg')"></div>
+    <div class="bg-slide" style="background-image: url('img/imagen2.jpg')"></div>
+    <div class="bg-slide" style="background-image: url('img/imagen3.jpg')"></div>
+    <div class="bg-slide" style="background-image: url('img/imagen4.jpg')"></div>
+    <div class="bg-slide" style="background-image: url('img/imagen5.jpg')"></div>
+    <div class="bg-slide" style="background-image: url('img/imagen6.jpg')"></div>
+    <div class="bg-slide" style="background-image: url('img/imagen7.jpg')"></div>
+    <div class="bg-slide" style="background-image: url('img/imagen8.jpg')"></div>
+    <div class="bg-slide" style="background-image: url('img/imagen9.jpg')"></div>
+    <div class="bg-slide" style="background-image: url('img/imagen10.jpg')"></div>
+
+    <div class="overlay"></div>
+    <div class="content">
+      <div class="fundacion-box">Fundada el 19 de febrero de 2009</div>
+      <h1><span class="proyeccion">PROYECCIÓN</span><br><span class="linares">LINARES</span></h1>
+      <div class="sub-text">POTOSÍ - BOLIVIA</div>
+    </div>
+  </div>
+
+  <section id="colores" class="section-padding">
+    <h2 class="title-sec">Colores Oficiales</h2>
+    <div class="color-grid">
+      <div class="color-item">
+        <div class="swatch" style="background-color: var(--rojo);"></div>
+        <div class="color-info"><b>Superior: Rojo</b><br><span>HEX: #F80000</span></div>
+      </div>
+      <div class="color-item">
+        <div class="swatch" style="background-color: var(--beige);"></div>
+        <div class="color-info"><b>Medio: Beige</b><br><span>HEX: #F9E4B7</span></div>
+      </div>
+      <div class="color-item">
+        <div class="swatch" style="background-color: var(--azul);"></div>
+        <div class="color-info"><b>Inferior: Azul</b><br><span>HEX: #0000FF</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="identidad" class="section-padding carousel-bg">
+    <h2 class="title-sec">Identidad Visual</h2>
+    <div class="carousel-wrapper">
+      <button class="nav-btn" onclick="changeSlide(-1)">&#10094;</button>
+      <button class="nav-btn" onclick="changeSlide(1)">&#10095;</button>
+      <div class="slides-container" id="logoSlider">
+        <div class="logo-slide">
+          <img src="img/escudo bampli.jpg" alt="Escudo">
+          <div class="logo-label">Escudo Oficial</div>
+        </div>
+        <div class="logo-slide">
+          <img src="img/escudo2.jpg" alt="2do Escudo">
+          <div class="logo-label">2do Escudo</div>
+        </div>
+        <div class="logo-slide">
+          <img src="img/logo.jpg" alt="Logo">
+          <div class="logo-label">Logo</div>
+        </div>
+        <div class="logo-slide">
+          <img src="img/logomoderno.jpg" alt="Logo Moderno">
+          <div class="logo-label">Logo Moderno PL</div>
+        </div>
+        <div class="logo-slide">
+          <img src="img/banner.jpg" alt="Banner Horizontal">
+          <div class="logo-label">Banner Horizontal</div>
+        </div>
+        <div class="logo-slide">
+          <img src="img/plantilla.png" alt="Plantilla de Comunicados">
+          <div class="logo-label">Plantilla de Comunicados</div>
+          <br>
+          <a href="plantilla_comunicado.docx" download class="btn-word-download">
+            Descargar Word (.docx)
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contactos" class="contact-section section-padding">
+    <h2 class="title-sec">Redes Sociales</h2>
+    <div class="social-btns">
+      <a href="https://www.facebook.com/Bampli" target="_blank" class="social-icon">
+        <div class="circle-icon"><i class="fa-brands fa-facebook-f"></i></div>
+        Facebook
+      </a>
+      <a href="https://www.tiktok.com/@proyeccion_linares" target="_blank" class="social-icon">
+        <div class="circle-icon"><i class="fa-brands fa-tiktok"></i></div>
+        TikTok
+      </a>
+      <a href="https://wa.me/69608260" target="_blank" class="social-icon">
+        <div class="circle-icon"><i class="fa-brands fa-whatsapp"></i></div>
+        WhatsApp
+      </a>
+    </div> 
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      © 2026 <b>BAMPLI</b> - Banda Musical Proyección Linares.
+    </div>
+    <div class="footer-credit">
+      by ALX - Potosí, Bolivia
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
